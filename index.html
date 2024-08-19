@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Página Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #424242;
+            color: #333;
+        }
+        .container {
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: rgba(8, 2, 66, 0.336) 0px 54px 55px, rgba(2, 3, 73, 0.247) 0px -12px 30px, rgba(4, 1, 43, 0.664) 0px 4px 6px, rgba(2, 19, 73, 0.17) 0px 12px 13px, rgba(2, 12, 58, 0.09) 0px -3px 5px;
+            text-align: center;
+            margin-top: 200px;
+        }
+        h1 {
+            color: #0b174e;
+        }
+        p {
+            font-size: 16px;
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #040d2c;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #051175;
+        }
+        @media (max-width: 600px) {
+            p {
+                font-size: 14px;
+            }
+            button {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bem-vindo à Minha Página Web</h1>
+        <p id="meuParagrafo">Este é um parágrafo que será alterado.</p>
+        <button onclick="alterarTexto()">Clique para alterar o texto</button>
+    </div>
+
+    <script>
+        function alterarTexto() {
+            document.getElementById('meuParagrafo').textContent = 'O texto do parágrafo foi alterado!';
+        }
+    </script>
+</body>
+</html>
